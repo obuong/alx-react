@@ -22,4 +22,13 @@ describe("rendering components", () => {
     wrapper.setProps({ html: "<u>test</u>" });
     expect(wrapper.html()).toEqual('<li data-urgent="true"><u>test</u></li>');
   });
+  
+  it('renders html content when both html and type are provided', () => {
+    const wrapper = shallow(
+      <NotificationItem type="html-test" html="<strong>HTML Test</strong>" />
+    );
+  
+    expect(wrapper.html()).toEqual('<li data-urgent="true"><strong>HTML Test</strong></li>');
+  });
+  
 });

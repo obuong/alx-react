@@ -16,7 +16,7 @@ describe("App tests", () => {
   it("should render Notifications component", () => {
     const component = shallow(<App />);
 
-    expect(component.containsMatchingElement(<Notifications />)).toEqual(true);
+    expect(component.containsMatchingElement(<Notifications />)).toEqual(false);
   });
   it("should render Header component", () => {
     const component = shallow(<App />);

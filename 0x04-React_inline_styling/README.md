@@ -1,1 +1,1 @@
-## 0x04. React inline styling
+Author:  Nwamah Ikechukwu
